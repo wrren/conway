@@ -1,6 +1,6 @@
 all: cnwy
 
-cnwy: bin/cnwy
+cnwy:
 	pushd . && cd build && cmake .. && make && popd
 
 test: bin/tests cnwy
